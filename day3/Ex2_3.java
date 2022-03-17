@@ -7,7 +7,7 @@ public class Ex2_3{
   System.out.print("貴方の年齢>>");
   String ageString = new Scanner(System.in).nextLine();
 	int age = Integer.parseInt(ageString);
-	int fortune = new Random().nextInt(3);
+	int fortune = new Random().nextInt(4);
 	++fortune;
   System.out.println("占いの結果が出ました！");
   System.out.println(age+"歳の"+name+"さん、あなたの運気番号は"+fortune+"です");
