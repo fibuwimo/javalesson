@@ -7,11 +7,10 @@ public class DiceApp{
 		 *1は奇数です。
 		 * */
 		int n = new Random().nextInt(6)+1;
-		int m =n%2;
-		if(m==0){
-			System.out.print(n+"は偶数です。");
+		if(n%2==0){
+			System.out.println(n+"は偶数です。");
 		}else{
-			System.out.print(n+"は奇数です。");
+			System.out.println(n+"は奇数です。");
 		}
 	}
 }
