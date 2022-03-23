@@ -1,13 +1,9 @@
 public class NameTest2{
 	public static void main(String[] args){
-		String sen = "いろはにほへとちりぬるを";
-		talk(sen);
-		sen = "わかよたれそつねならむ";
-		talk(sen);
-		sen = "うゐのおくやまけふこえて";
-		talk(sen);
-		sen = "あさきゆめみしゑひもせすん";
-		talk(sen);
+		talk("いろはにほへとちりぬるを");
+		talk("わかよたれそつねならむ");
+		talk("うゐのおくやまけふこえて");
+		talk("あさきゆめみしゑひもせすん");
 	}
 	public static void talk(String sen){
 		for(int i=0;i<sen.length(); i++){
