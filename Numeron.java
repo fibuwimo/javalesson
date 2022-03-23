@@ -4,7 +4,6 @@ public class Numeron{
 		int x = new Random().nextInt(9)+1;
 		int y;
 		int z;
-		int n;
 		do{
 			y = new Random().nextInt(10);
 		}while(y==x);
@@ -12,13 +11,13 @@ public class Numeron{
 			z = new Random().nextInt(10);
 		}while(z==x || z==y);
 		System.out.println("【ヒット＆ブロウ!】 各位の数字が違う３桁の自然数を当てろ！！");
-		System.out.println("ヒット:数字も位置も正しい。ブロウ:数字は正しいが位置が誤り。");
+		System.out.println("ヒット:数字も位も正しい。ブロウ:数字は正しいが位が誤り。");
 			//System.out.println(x+" "+y+" "+z);//確認用
 		for(int i =1,hit=0; hit!=3;i++){
 			int blow = 0;
 			hit=0;
-			System.out.println("3桁の数字>>");
-			n= new Scanner(System.in).nextInt();
+			System.out.print("3桁の数字>>");
+			int n= new Scanner(System.in).nextInt();
 			int a = n/100;
 			int b = (n%100)/10;
 			int c = ((n%100)%10);
@@ -44,10 +43,11 @@ public class Numeron{
 			}else if(c==z){
 				hit++;
 			}
-			System.out.println(hit+"ヒット、"+blow+"ブロウです");//確認用
 			if(hit==3){
 			System.out.println(hit+"ヒット！正解！　答えは"+n+"で、挑戦回数は"+i+"回です。");
 			}else{
+			System.out.println(hit+"ヒット、"+blow+"ブロウです");
+			System.out.println();
 			}
 		}
 	}
