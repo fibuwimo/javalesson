@@ -37,7 +37,7 @@ public class NameTest{
 				catch(InterruptedException e){
 				}
 			System.out.println("");
-			String s2 =name1+"「僕の名前を天地無用にするな！あと、昨晩はいつになくグッスリ安眠だ！」";
+			String s2 =name1+"「僕の名前をトマトや新聞紙みたいに呼ぶんじゃない！あと、昨晩はいつになくグッスリ安眠だ！」";
 			for(int i=0;i<s2.length(); i++){
 				System.out.print(s2.charAt(i));
 				try{
@@ -391,5 +391,23 @@ public class NameTest{
 				catch(InterruptedException e){
 				}
 			}
+	}
+	public static void talk(String talkText){
+
+			System.out.println("");
+			String s1 =talkText;
+			for(int i=0;i<s1.length(); i++){
+				System.out.print(s1.charAt(i));
+				try{
+				Thread.sleep(100);
+				}
+				catch(InterruptedException e){
+				}
+			}
+				try{
+				Thread.sleep(1000);
+				}
+				catch(InterruptedException e){
+				}
 	}
 }	
