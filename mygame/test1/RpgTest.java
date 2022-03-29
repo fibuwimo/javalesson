@@ -1,6 +1,9 @@
+import java.util.*;
 public class RpgTest{
 	public static void main(String[] args){
-		Hero h = new Hero();
+		System.out.print("名前を入力>>");
+		String hName = new Scanner(System.in).nextLine(); 
+		Hero h = new Hero(hName);
 		Enemy e = new Enemy();
 		int turn =0;
 		while(true){
