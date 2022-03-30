@@ -25,7 +25,7 @@ public class Enemy{
 		System.out.println(this.name+"は"+h.name+"に"+(this.atk-h.def)+"のダメージを与えた！");
 	}
 	public void spR(){
-		if(sp<mSp){
+		if(this.sp<this.mSp){
 			sp++;
 		}
 	}
