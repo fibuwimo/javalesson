@@ -9,7 +9,7 @@ public class Lesson{
 		}
 		for(int i=0 ;i<scores.length-1;i++){
 			for(int j=i+1;j<scores.length;j++){
-				if(scores[i]>scores[j]){
+				if(scores[i]<scores[j]){
 					int temp = scores[i];
 					scores[i] = scores[j];
 					scores[j] = temp;
