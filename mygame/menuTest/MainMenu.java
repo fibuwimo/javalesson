@@ -2,10 +2,10 @@ import java.util.*;
 public class MainMenu{
 	String[] menuLists = {
 		"パーティ",
-		"アイテム",
+		"アイテム(未実装)",
 		"クエスト",
-		"ショップ",
-		"カジノ",
+		"ショップ(未実装)",
+		"カジノ(未実装)",
 		"終わる",
 	};
 	public MainMenu(ArrayList<Player> players){
