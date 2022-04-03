@@ -48,6 +48,11 @@ public class Chara{
 	}
 	public void setHp(int hp){
 		this.hp =  hp;
+		if(this.hp>0){
+			this.isAlive = true;
+		}else{
+			this.isAlive = false;
+		}
 	}
 	public void setMaxHp(int maxHp){
 		this.maxHp =  maxHp;
@@ -68,9 +73,6 @@ public class Chara{
 		this.agi =  agi;
 	}
 	public void fluctHp(int damage){
-		if(damage<0){
-			damage=0;
-		}
 		this.hp -= damage;
 		if(this.hp<=0){
 			this.hp=0;
@@ -82,13 +84,14 @@ public class Chara{
 		}
 	}
 	public void statusIndi(){
-		System.out.println("----ステータス----");
+		System.out.println("↓------ステータス------↓");
 		System.out.printf("%s     :%s%n","名前",this.name);
 		System.out.printf("%s/%s:%d/%d%n","hp","最大Hp",this.hp,this.maxHp);
 		System.out.printf("%s/%s:%d/%d%n","sp","最大Sp",this.sp,this.maxSp);
 		System.out.printf("%s   :%d%n","攻撃力",this.atk);
 		System.out.printf("%s   :%d%n","防御力",this.def);
 		System.out.printf("%s     :%d%n","敏速",this.agi);
+		System.out.println("↑----------------------↑");
 		System.out.print("エンターで戻る>>");
 		new Scanner(System.in).nextLine();
 	}

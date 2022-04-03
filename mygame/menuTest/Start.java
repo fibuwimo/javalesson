@@ -2,16 +2,16 @@ import java.util.*;
 public class Start{
 	public static void main(String[] args){
 		ArrayList<Player> players = new ArrayList<Player>();
-		Hero h1 = new Hero("勇者A",20,20,0,5,7,4,11);
-		players.add(h1);
-		Hero h2 = new Hero("勇者B",30,30,0,6,8,6,5);
-		players.add(h2);
-		Hero h3 = new Hero("勇者C",40,40,0,2,9,7,1);
-		players.add(h3);
-		Hero h4 = new Hero("勇者D",10,10,0,0,50,2,0);
-		players.add(h4);
-		Hero h5 = new Hero("勇者E",100,100,0,0,5,0,10);
-		players.add(h5);
+		Hero p1 = new Hero("ゆうしゃ",20,20,0,2,8,6,15);
+		players.add(p1);
+		Wizard p2 = new Wizard("魔法使い",15,15,0,1,8,4,4);
+		players.add(p2);
+		Cleric p3 = new Cleric("そうりょ",20,20,0,1,5,6,6);
+		players.add(p3);
+		Hero p4 = new Hero("ええええ",10,10,0,1,50,2,0);
+		players.add(p4);
+		Hero p5 = new Hero("おおおお",70,70,0,10,5,0,10);
+		players.add(p5);
 		MainMenu mMenu = new MainMenu(players);
 	}
 }

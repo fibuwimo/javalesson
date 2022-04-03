@@ -17,7 +17,7 @@ public class PartyMenu{
 		}
 	}
 	public void menuIndi(ArrayList<Player> players){
-		System.out.println("↓----パーティメンバー----↓");
+		System.out.println("↓---パーティメンバー---↓");
 		for(int i =0;i<players.size();i++){
 			System.out.printf("%d:%s%n",i+1,players.get(i).getName());
 			if(i==2){
@@ -26,7 +26,7 @@ public class PartyMenu{
 		}
 		System.out.println("0:戻る");
 		System.out.println("-1:並び替え");
-		System.out.println("↑------------------------↑");
+		System.out.println("↑----------------------↑");
 	}
 	public int menuChois(ArrayList<Player> players){
 		int menuNum;
@@ -37,14 +37,14 @@ public class PartyMenu{
 		return menuNum;
 	}
 	public void change(ArrayList<Player> players){
-		System.out.println("↓-----並び替え-----↓");
+		System.out.println("↓-------並び替え-------↓");
 		for(int i =0;i<players.size();i++){
 			System.out.printf("%d:%s%n",i+1,players.get(i).getName());
 			if(i==2){
 				System.out.println("----↑戦闘↑/↓控え↓----");
 			}
 		}
-		System.out.println("↑------------------↑");
+		System.out.println("↑----------------------↑");
 		int n1;
 		int n2;
 		do{
