@@ -7,8 +7,7 @@ public class MainMenu{
 		"クエスト",
 		"宿屋",
 		"ショップ(未実装)",
-		"カジノ(未実装)",
-		"終わる",
+		"カジノ",
 	};
 	public MainMenu(ArrayList<Player> players){
 		while(true){
@@ -36,7 +35,7 @@ public class MainMenu{
 					System.out.println("6");
 					break;
 				case 7:
-					System.out.println("6");
+					Casino ca = new Casino();
 					break;
 			}
 		}
@@ -44,7 +43,7 @@ public class MainMenu{
 	public void menuIndi(){
 		System.out.println("↓----メインメニュー----↓");
 		System.out.printf("所持金:%dG%n",Player.money);
-		for(int i =0;i<menuLists.length-1;i++){
+		for(int i =0;i<menuLists.length;i++){
 			System.out.printf("%d:%s%n",i+1,menuLists[i]);
 		}
 		System.out.println("0:戻る");
@@ -53,9 +52,9 @@ public class MainMenu{
 	public int menuChois(){
 		int menuNum;
 		do{
-		System.out.printf("1~%d or 0>>",menuLists.length-1);
+		System.out.printf("1~%d or 0>>",menuLists.length);
 		menuNum = new Scanner(System.in).nextInt();
-		}while(menuNum>menuLists.length-1 || menuNum<0);
+		}while(menuNum>menuLists.length || menuNum<0);
 		return menuNum;
 	}
 }

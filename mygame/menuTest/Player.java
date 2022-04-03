@@ -1,6 +1,7 @@
 import java.util.*;
 public class Player extends Chara{
 	static int money;
+	static int coin;
 	int exp =0;
 	int maxExp=100;
 	int lv =1;
