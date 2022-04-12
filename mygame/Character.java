@@ -4,6 +4,7 @@ public class Character{
 	int hp;
 	int atk;
 	int def;
+	boolean isPoizun = false;
 	boolean isAlive=true;
 	public Character(String name,int h,int a,int d){
 		this.name = name;
