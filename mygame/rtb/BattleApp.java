@@ -1,7 +1,7 @@
 public class BattleApp{
 	public static void main(String[] args){
 		Character h1 = new Hero("ゆうしゃ",50,15,3);
-		Character e1 = new Enemy("マタンゴ",65,10,2);
+		Character e1 = new Enemy("マタンゴ",1000,10,2);
 		System.out.println("バトル開始！");
 		while(true){
 			try {
